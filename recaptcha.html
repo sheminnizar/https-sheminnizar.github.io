@@ -1,11 +1,11 @@
 <!DOCTYPE html>
   <html>
     <head>
-      <script src="https://www.google.com/recaptcha/api.js?render=6LdjHw4rAAAAAP57YgvSQVZKhAbq8DFIR9mzncU3"></script>
+      <script src="https://www.google.com/recaptcha/api.js?render=6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"></script>
       <script>
         function onLoadCallback() {
           grecaptcha.ready(function() {
-            grecaptcha.execute('6LdjHw4rAAAAAP57YgvSQVZKhAbq8DFIR9mzncU3', {action: 'submit'}).then(function(token) {
+            grecaptcha.execute('6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI', {action: 'submit'}).then(function(token) {
               Recaptcha.postMessage(token);
             }).catch(function(error) {
             alert("Captcha error: " + error.toString());
