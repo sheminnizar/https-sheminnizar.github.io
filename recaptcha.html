@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <script src="https://www.google.com/recaptcha/api.js?render=6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"></script>
+      <script>
+        function onLoadCallback() {
+          grecaptcha.ready(function() {
+            grecaptcha.execute('6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI', {action: 'submit'}).then(function(token) {
+              Recaptcha.postMessage(token);
+            }).catch(function(error) {
+            alert("Captcha error: " + error.toString());
+              Recaptcha.postMessage("error:" + error.toString());
+            });
+          });
+        }
+        window.onload = onLoadCallback;
+      </script>
+    </head>
+    <body>
+      <h3>Running reCAPTCHA v3...</h3>
+    </body>
+  </html>
