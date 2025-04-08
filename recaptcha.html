@@ -8,7 +8,6 @@
             grecaptcha.execute('6LdjHw4rAAAAAP57YgvSQVZKhAbq8DFIR9mzncU3', {action: 'submit'}).then(function(token) {
               Recaptcha.postMessage(token);
             }).catch(function(error) {
-            alert("Captcha error: " + error.toString());
               Recaptcha.postMessage("error:" + error.toString());
             });
           });
