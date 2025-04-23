@@ -7,7 +7,7 @@
     <script>
       function executeCaptcha() {
         grecaptcha.ready(function () {
-          grecaptcha.execute('YOUR_SITE_KEY', { action: 'login' }).then(function (token) {
+          grecaptcha.execute('6LdjHw4rAAAAAP57YgvSQVZKhAbq8DFIR9mzncU3', { action: 'login' }).then(function (token) {
             window.flutter_inappwebview.callHandler('onTokenReceived', token);
           });
         });
